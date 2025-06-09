@@ -50,5 +50,8 @@ img {
 
 .titulo-secao {
     text-align: center;
-    
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    position: relative;
+    padding-bottom: 15px;
 }
