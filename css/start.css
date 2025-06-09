@@ -1,0 +1,8 @@
+#start {
+    .bloco {
+        width: 450px;
+        height: 600px;
+        background-color: rgb(98, 79, 60);
+        border-radius: 50px;
+    }
+}

@@ -1,4 +1,54 @@
+:root { 
+/*seleciona o elemento raiz do documento (HTML)
+Usado para definir variáveis CSS globais para uso em todo o site*/
+    --primary-color: #8b540c;
+    --secondary-color: #513013;
+    --accent-color: #5a6a7a;
+    --light-color: #e5c382;
+    --dark-color: #231a0b;
+    --success-color: #4a8e57;
+    --error-color: #a31616;
+    --gray-color: #a38e8e;
+    --transition: all 0.3s ease;
+}
+
+* {
+    /*Seletor universal: seleciona todos os elementos da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {/*Seleciona apenas o elemento body*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
 img {
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    
 }
