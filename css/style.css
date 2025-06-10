@@ -2,9 +2,9 @@
 /*seleciona o elemento raiz do documento (HTML)
 Usado para definir variáveis CSS globais para uso em todo o site*/
     --primary-color: #8b540c;
-    --secondary-color: #513013;
+    --secondary-color: #50351d;
     --accent-color: #5a6a7a;
-    --light-color: #e5c382;
+    --light-color: #fbf0dd;
     --dark-color: #231a0b;
     --success-color: #4a8e57;
     --error-color: #a31616;
@@ -34,6 +34,12 @@ body {/*Seleciona apenas o elemento body*/
     padding: 0 15px;
 }
 
+#fundo {
+    background-color: var(--gray-color);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius:7px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -43,15 +49,73 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .titulo-secao {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--secondary-color);
     position: relative;
     padding-bottom: 15px;
+}
+
+.titulo-secao::after { /*Atribui características específicas ao último item da classe*/
+    content: ''; /*Atualiza o conteúdo em específico*/
+    position: absolute;/*Posição do item em relação com seu antepassado*/
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 12px 24px;
+    color: var(--light-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    text-align: center;
+}
+.botao:hover {
+    background-color: var(--gray-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 1.5rem;
 }

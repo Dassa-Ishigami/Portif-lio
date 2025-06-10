@@ -1,8 +1,11 @@
 #start {
-    .bloco {
-        width: 450px;
-        height: 600px;
-        background-color: rgb(98, 79, 60);
-        border-radius: 50px;
-    }
+    margin: 0px;
+    background-color: rgb(237, 229, 220);
+    align-items: center;
+    
+}    
+.bloco {
+    width: 1912px;
+    height: 150px;
+    background-color: rgba(98, 79, 60, 0.917)
 }
